@@ -1,0 +1,77 @@
+// C++ code
+//
+
+#define lg 4
+#define ly 5
+#define lr 6
+
+#define lrp 3
+#define lgp 2
+
+#define som 7
+
+void setup()
+{
+  pinMode(lg, OUTPUT);
+  pinMode(ly, OUTPUT);
+  pinMode(lr, OUTPUT);
+  
+  pinMode(lrp, OUTPUT);
+  pinMode(lgp, OUTPUT);
+  
+  pinMode(som, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(lg,HIGH);
+  digitalWrite(lrp,HIGH);
+  delay(6000);
+  digitalWrite(lg,LOW);
+  
+  digitalWrite(ly,HIGH);
+  delay(4000);
+  digitalWrite(ly,LOW);
+  digitalWrite(lrp,LOW);
+  
+  digitalWrite(lr,HIGH);
+  digitalWrite(lgp,HIGH);
+  
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+  
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+  
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+   
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+  
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+  
+  tone(som,1500);
+  delay(500);
+  noTone(som);
+  delay(500);
+  
+  digitalWrite(lr,LOW);
+  digitalWrite(lgp,LOW);
+}
